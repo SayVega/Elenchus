@@ -16,19 +16,23 @@
         <h2>Lists</h2>
         <button id="add-list-btn">+</button>
       </div>
-      <ul id="task-list">
+      <ul id="lists-list">
         <li><button>All</button></li>
         <li><button>Thrash</button></li>
       </ul>
     </section>
+    
     <section id="task-form">
+    <h2 id="list-name">Select a list</h2>
       <form>
-        <input type="text" id="add-list" placeholder="Create new task">
-        <button id="add-list-btn-menu">✔</button>
-      <form>
-      <div id="list-name">
-      </div>
+        <input type="text" id="task-input" placeholder="Create new task" name="taskName">
+        <button id="add-task-btn">✔</button>
+      </form>
+      <ul id="tasks-list"> 
+
+      </ul>
     </section>
+
     <section id="task-timer">
     </section>
   </main>
@@ -43,5 +47,6 @@
       </form>
   </div>
   <script src="scripts.js"></script>
+  
 </body>
 </html>

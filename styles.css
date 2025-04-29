@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 *{
   box-sizing:border-box;
   margin:0;
-
+  font-family: 'Ubuntu', sans-serif;
 }
 
 body{
@@ -17,7 +19,7 @@ h1{
 
 main{
     display:grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: .5fr 2fr 1fr;
     gap:20px;
 }
 
@@ -43,8 +45,8 @@ section > h2{
     align-items: flex-start;
     flex-wrap: wrap;
 }
-/*crear tasks*/
-#add-list{
+
+#task-input{
     width:85%;
     margin: 0 0 0 .5rem;
     border-top-left-radius:5px;
@@ -55,7 +57,7 @@ section > h2{
     background-color:#333333;
 }
 
-#add-list-btn-menu{
+#add-task-btn{
     width:10%;
     height:2rem;
     margin: 0 .5rem 0 0;
@@ -66,12 +68,18 @@ section > h2{
     cursor: pointer;
 }
 
-h3{
-    text-align: left;
+h2{
+    text-align: center;
     margin-top:1rem;
     font-size:2rem;
 }
 
+.task-item{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 .7rem 0 0;
+}
 /* Lists */
 
 #list-form {
@@ -97,6 +105,7 @@ ul{
     margin-left:1rem;
 }
 
+
 li > button{
     width:100%;
     margin: 0 0 0 -.5rem;
@@ -113,6 +122,10 @@ li > button{
     border: none;
     background: #1c1c1c;
     z-index: 1;
+}
+
+li:first-child{
+    margin-top:1rem;
 }
 
 li>button:hover:after {
